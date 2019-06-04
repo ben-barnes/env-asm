@@ -23,10 +23,10 @@
         ## they are:
         ## 
         ## argc       : Argument count.
-        ## argv[]     : Argument array. One pointer per argument.
+        ## argv[]     : Argument vector. One pointer per argument.
         ## 0x00000000 : Zero, separates arguments from environment variables.
-        ## env[]      : Environment variable array. One pointer per variable.
-        ## 0x00000000 : Zero, terminates environment variable array.
+        ## env[]      : Environment variable vector. One pointer per variable.
+        ## 0x00000000 : Zero, terminates environment variable vector.
 
         .equ SYS_EXIT, 60
         .equ EXIT_SUCCESS, 0
